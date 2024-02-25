@@ -1,8 +1,8 @@
-# LeetCode Solutions - Easy Problems
+# LeetCode Solutions
 
 ![LeetCode Logo](https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png)
 
-This repository contains my solutions to LeetCode easy problems. Each problem is solved in CPP and provided with detailed explanations where necessary.
+This repository contains my solutions to LeetCode problems. Each problem is solved in CPP and provided with detailed explanations where necessary.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ LeetCode is a platform for learning and practicing coding skills through various
 
 ## Folder Structure
 
-The repository is organized into folders corresponding to the problem number on LeetCode. Each folder contains the CPP script with the solution and an explanation file if necessary.
+The repository is organized into folders corresponding to the problem number on LeetCode. Each folder contains the CPP file with the solution and an explanation file if necessary.
 
 leetcode_solutions/
 │
