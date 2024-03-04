@@ -10,22 +10,22 @@ public:
         int n = tokens.size();
         int score =0;
         int max_score=0;
-        int i=0, j = n-1;
+        int front=0, end = n-1;
         
-        while(i<=j)
+        while(front<=end)
         {
-            if(power>=tokens[i])
+            if(power>=tokens[front])
             {
                 score++;
-                power -= tokens[i];
-                i++;
+                power -= tokens[front];
+                front++;
                 max_score = std::max(max_score, score);
             }
             else if(score > 0)
             {
                 score--;
-                power += tokens[j];
-                j--;
+                power += tokens[end];
+                end--;
             }
             else
                 break;
