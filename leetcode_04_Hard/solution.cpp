@@ -51,7 +51,26 @@ public:
     {
         int i=0, j=0;
         int n= int(nums1.size()), m=int(nums2.size());
-        
+        vector<int>median;
+        int count = 0;
+        int mid_index = (n+m)/2;
+        if((n+m)%2 != 0)
+        {
+            while(i<n && j<m)
+            {
+                if(nums1[i]<nums2[j])
+                {
+                    i++;
+                }
+                else
+                {
+                    j++;
+                }
+                count++;
+                if(count == mid_index+1)
+                    median.push_back(2);
+            }
+        }
               
     }
 };
@@ -63,8 +82,8 @@ int main()
     vector<int>nums2 = {3,4};
     Solution st;
     
-    double val = st.findMedianSortedArrays(nums1, nums2);
-    printf("\n%lf", val); 
+    // double val = st.findMedianSortedArrays(nums1, nums2);
+    // printf("\n%lf", val); 
 
     return 0;
 }
